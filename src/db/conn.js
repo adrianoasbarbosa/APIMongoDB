@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 const connection = () => {
-    const username = 'AdrianoBarbosa';
+    const username = 'USERNAME';
     const password = encodeURIComponent('SENHA'); // Codifique a senha se necessário
-    const cluster = 'restapibd.uxpwj16.mongodb.net';
-    const dbname = 'APIUSER';
+    const cluster = 'CLUSTERNAME';
+    const dbname = 'DBNAME';
 
-    const uri = `mongodb+srv://AdrianoBarbosa:<SENHA>@restapibd.uxpwj16.mongodb.net/?retryWrites=true&w=majority&appName=RESTAPIBD`;
+    const uri = `mongodb+srv://USERNAME:<SENHA>@CLUSTERNAME/?retryWrites=true&w=majority&appName=RESTAPIBD`;
 
     mongoose.connect(uri)
         .then(() => console.log('Conectado ao banco de dados'))
